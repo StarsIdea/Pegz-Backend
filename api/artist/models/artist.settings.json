@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "name": "artist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "artist"
+    },
+    "tokens": {
+      "via": "artist",
+      "collection": "token"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "extraTitle": {
+      "type": "string"
+    },
+    "extraContent": {
+      "type": "richtext"
+    },
+    "websiteUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "twitterUrl": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "integer"
+    }
+  }
+}

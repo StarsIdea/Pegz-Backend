@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_slide_slides",
+  "info": {
+    "name": "slide",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
